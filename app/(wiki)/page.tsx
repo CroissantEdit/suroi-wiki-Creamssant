@@ -23,43 +23,50 @@ export default async function Home() {
             priority
           />
         </div>
+        <h2>FAQ</h2>
 
         {/* What is Suroi? */}
-        <div className="border border-transparent hover:border-blue-500 rounded-lg p-3">
-          <p className="text-lg"><strong>What is Suroi?</strong></p>
-          <p className="text-sm">
-            Welcome to the official Suroi wiki! Suroi is an open-source 2D
-            battle royale game inspired by surviv.io. You can play it at{" "}
-            <Link href="https://suroi.io" target="_blank">
-              suroi.io
-            </Link>
-            .
-          </p>
+        <div className="faq-dropdown">
+          <details className="border border-transparent hover:border-blue-500 rounded-lg p-3">
+            <summary className="text-lg"><strong>What is Suroi?</strong></summary>
+            <p className="text-sm">
+              Welcome to the official Suroi wiki! Suroi is an open-source 2D
+              battle royale game inspired by surviv.io. You can play it at{" "}
+              <Link href="https://suroi.io" target="_blank">
+                suroi.io
+              </Link>
+              .
+            </p>
+          </details>
         </div>
 
         {/* How can I contribute? */}
-        <div className="border border-transparent hover:border-blue-500 rounded-lg p-3">
-          <p className="text-lg"><strong>How can I contribute?</strong></p>
-          <p className="text-sm">
-            This wiki is also open-source! Any contributions are appreciated.
-            To contribute, head over to{" "}
-            <Link
-              href="https://github.com/HasangerGames/suroi-wiki"
-              target="_blank"
-            >
-              the GitHub repo
-            </Link>
-            .
-          </p>
+        <div className="faq-dropdown">
+          <details className="border border-transparent hover:border-blue-500 rounded-lg p-3">
+            <summary className="text-lg"><strong>How can I contribute?</strong></summary>
+            <p className="text-sm">
+              This wiki is also open-source! Any contributions are appreciated.
+              To contribute, head over to{" "}
+              <Link
+                href="https://github.com/HasangerGames/suroi-wiki"
+                target="_blank"
+              >
+                the GitHub repo
+              </Link>
+              .
+            </p>
+          </details>
         </div>
 
         {/* What are the stats based on? */}
-        <div className="border border-transparent hover:border-blue-500 rounded-lg p-3">
-          <p className="text-lg"><strong>What are the stats based on?</strong></p>
-          <p className="text-sm"> 
-            Stats are based off Suroi commit <CommitLink sha={HEAD} /> @{" "}
-            <TagLink sha={HEAD} />
-          </p>
+        <div className="faq-dropdown">
+          <details className="border border-transparent hover:border-blue-500 rounded-lg p-3">
+            <summary className="text-lg"><strong>What are the stats based on?</strong></summary>
+            <p className="text-sm"> 
+              Stats are based off Suroi commit <CommitLink sha={HEAD} /> @{" "}
+              <TagLink sha={HEAD} />
+            </p>
+          </details>
         </div>
 
         <h2>Pages</h2>
