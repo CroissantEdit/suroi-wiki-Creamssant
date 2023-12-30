@@ -67,7 +67,6 @@ export const wikiPages: SearchItem[] = [
     url: "/skins",
     description: "List of skins",
     image: getSuroiImageLink(getSuroiItem("leia"), undefined, "base"),
-    image: getSuroiImageLink(getSuroiItem("leia"), undefined, "base"),
 
   },
   {
